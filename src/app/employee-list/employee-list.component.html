@@ -1,0 +1,21 @@
+<h2>
+  employee-list
+</h2>
+
+<!-- Steps for DI
+Define the service class.
+Registor with injector(add the service as provider in the app.module.ts).
+Declare as depedency in employee-list and employee-detail -->
+
+<!-- http and observables.
+1. Import HttpClientModule in our application(in app.module.js) from @angular/common/http. (registering http service with angulars injector).
+2. Inject it as a dependency in the employee service.
+3. http get request  from EmpService.
+4. Receive the observable and cast into an employee array.
+5. Subscribe to the observable from EmpList and EmpDetail.
+6. Assign the employee array to a local variable. -->
+<h2>{{errorMsg}}</h2>
+<ul *ngFor="let employee of employees">
+    {{errorMsg}}
+  <li>{{employee.name | uppercase}}</li>
+</ul>

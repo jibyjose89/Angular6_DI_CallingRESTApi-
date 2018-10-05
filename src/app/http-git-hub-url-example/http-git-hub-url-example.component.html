@@ -1,0 +1,10 @@
+<p>
+  http-git-hub-url-example works!
+</p>
+<!-- import FormsModule in app.module.js when using ngModel -->
+<input type="text" [(ngModel)]="userName">
+<button (click)=search()>Search</button>
+<div *ngIf=response>
+  <p>Login Name:{{response.login}}</p>
+  <p>Followers:{{response.followers}}</p>
+</div>
